@@ -18,9 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 #Route::get('/user', [UserController::class, 'index']);
-
-#Route::get('/{shortner}',[redirectController::class, 'index']);
-
 Route::get('/send', [redirectController::class, 'send']);
+Route::get('/{shortner}',[redirectController::class, 'index']);
+
